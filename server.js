@@ -3,7 +3,7 @@ var ejs = require('ejs')
 var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 var app = express();
-mongoose.connect('mongodb://localhost:27017/article')
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds129926.mlab.com:29926/article')
 
 //body parser ids the middleware for parsing incoming request bodies 
 app.use(bodyParser.json());
